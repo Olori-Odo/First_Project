@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Recipe</title>
+    <link rel="stylesheet" href="index.css">
+    
+    <script src="https://kit.fontawesome.com/6c4126d721.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="header">Find Meals For Your Ingredients</h2>
+                <blockquote> Good Food, Good Life. </blockquote>
+
+                <div class="meal-search-box">
+                    <input class="search-control" type="text" placeholder="Enter an Ingredient or a meal you want suggestions for" id="search-input">
+                    <button type="submit" id="search-btn" class="search-btn btn">
+                        <i class="fas fa-search"></i>
+                    </button>    
+                </div>
+            </div>
+
+
+            <div class="meal-result">
+                <h2>Your Search Results:</h2>
+                <div id="meal">
+
+                    <div class = "meal-item">
+                        <div class = "meal-img">
+                          <img src = "./asset/Beatroot.jpg" alt = "food">
+                        </div>
+                        <div class = "Beatroot">
+                          <h3>Beatroot</h3>
+                          <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+
+                    <div class = "meal-item">
+                        <div class = "meal-img">
+                          <img src = "./asset/amala-combo.webp" alt = "food">
+                        </div>
+                        <div class = "amala-combo">
+                          <h3>Amala Combo</h3>
+                          <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+
+                    <div class = "meal-item">
+                        <div class = "meal-img">
+                          <img src = "./asset/salad.jpg" alt = "food">
+                        </div>
+                        <div class = "salad">
+                          <h3>Salad</h3>
+                          <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="meal-details">
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn"></button>
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="meal-details-content">
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
