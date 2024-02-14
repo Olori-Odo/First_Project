@@ -1,82 +1,108 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diamond Recipe</title>
-    <link rel="stylesheet" href="index.css">
-    
-    <script src="https://kit.fontawesome.com/6c4126d721.js" crossorigin="anonymous"></script>
-    <script src="index.js" defer></script>
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />"">
+
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
     <div class="container">
+            
         <div class="meal-wrapper">
             <div class="meal-search">
-                <h2 class="header">Find Meals For Your Ingredients</h2>
-                <blockquote> Good Food, Good Life. </blockquote>
+            <h2 class="header">Find Meals For Your Ingredients</h2>
+            <blockquote>Good Food, Good Life.</blockquote>
 
-                <div class="meal-search-box">
-                    <input class="search-control" type="text" placeholder="Enter an Ingredient or a meal you want suggestions for" id="search-input">
-                    <button type="submit" id="search-btn" class="search-btn btn">
-                        <i class="fas fa-search"></i>
-                    </button>    
-                </div>
+            <div class="meal-search-box">
+                <input
+                class="search-control"
+                type="text"
+                placeholder="Enter an Ingredient or a meal you want suggestions for"
+                id="search-input"
+                />
+
+                <button type="submit" id="search-btn" class="search-btn btn">
+                <i class="fas fa-search"></i>
+                </button>
             </div>
-
+            </div>
 
             <div class="meal-result">
-                <h2>Your Search Results:</h2>
-                <div id="meal">
+            <h2>Your Search Results:</h2>
 
-                    <div class = "meal-item">
-                        <div class = "meal-img">
-                          <img src = "./asset/Beatroot.jpg" alt = "food">
-                        </div>
-                        <div class = "Beatroot">
-                          <h3>Beatroot</h3>
-                          <a href = "#" class = "recipe-btn">Get Recipe</a>
-                        </div>
+            <div id="meal">
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="./asset/Beatroot.jpg" alt="food" />
                     </div>
 
-                    <div class = "meal-item">
-                        <div class = "meal-img">
-                          <img src = "./asset/amala-combo.webp" alt = "food">
-                        </div>
-                        <div class = "amala-combo">
-                          <h3>Amala Combo</h3>
-                          <a href = "#" class = "recipe-btn">Get Recipe</a>
-                        </div>
+                    <div class="Beatroot">
+                        <h3>Beatroot</h3>
+                        <a href="#" class="recipe-btn">Get Recipe</a>
                     </div>
+                </div>
 
-                    <div class = "meal-item">
-                        <div class = "meal-img">
-                          <img src = "./asset/salad.jpg" alt = "food">
-                        </div>
-                        <div class = "salad">
-                          <h3>Salad</h3>
-                          <a href = "#" class = "recipe-btn">Get Recipe</a>
-                        </div>
+                <div class="meal-item">
+                    <div class="meal-img">
+                        <img src="./asset/amala-combo.webp" alt="food" height="350px" />
                     </div>
+                    <div class="amala-combo">
+                        <h3>Amala Combo</h3>
+                        <a href="#" class="recipe-btn">Get Recipe</a>
+                    </div>
+                </div>
 
+                <div class="meal-item">
+                <div class="meal-img">
+                    <img src="./asset/salad.jpg" alt="food" />
+                </div>
+                <div class="salad">
+                    <h3>Salad</h3>
+                    <a href="#" class="recipe-btn">Get Recipe</a>
+                </div>
                 </div>
             </div>
+        </div>
 
-            <div class="meal-details">
-                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn"></button>
-                <i class="fas fa-times"></i>
-            </div>
+        <div class="meal-details">
+
+            <button type = "button"  class="btn recipe-close-btn"  id="recipe-close-btn">
+                <i class = "fas fa-times"></i>
+            </button> 
 
             <div class="meal-details-content">
 
-            </div>
+                <h2 class = "recipe-title">Meals Name Here</h2>
+                <p class = "recipe-category">Category Name</p>
 
+                <div class = "recipe-instruct">
+                    <h3>Instructions:</h3>
+
+                    <p>Food is important for life. To be healthy and active, we should certainly have enough food. 
+                        But the foods we eat should also be safe and rich in all the nutrients our body needs. We should choose from a wide variety of foods and we should eat them regularly, 
+                        throughout the day, every day of the year.  </p>
+
+                    <p> Do not forget that we should also enjoy the food that we eat; it should look, smell and taste good. 
+                        Without good nutrition, children and young people cannot develop their potential to the full, 
+                        and adults will have difficulty in doing their best.</p>                                        
+                </div>
+
+                <div class = "recipe-meal-img">
+                    <img src = "./asset/egusi.webp" alt = "">
+                </div>
+                <div class = "recipe-link">
+                    <a href = "#" target = "_blank">Watch Video</a>
+                </div>
+
+                
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
