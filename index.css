@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 :root {
-  --jonny: #da6c23;
-  --walker: #b54507;
+  --jonny: rgb(209, 56, 56);
+  --walker: #da6c23;
 }
 body {
   font-weight: 300;
@@ -21,14 +21,14 @@ nav {
   justify-content: space-between;
   height: 70px;
   width: 100%;
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.9);
   color: #fff;
   position: fixed;
 }
 
 .nav-logo {
   display: flex;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .d-icon {
   margin-top: 8px;
@@ -40,7 +40,7 @@ nav {
 }
 ul {
   display: flex;
-  margin-right: 30px;
+  margin-right: 100px;
   list-style-type: none;
   gap: 15px;
   align-items: center;
@@ -48,6 +48,12 @@ ul {
 .li-items {
   color: #fff;
 }
+.li-items:hover {
+  /* color: aqua; */
+  background-color: cadetblue;
+  border-radius: 2px;
+}
+
 .btn {
   font-family: inherit;
   cursor: pointer;
