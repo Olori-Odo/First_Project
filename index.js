@@ -5,21 +5,21 @@ const recipeCloseBtn = document.getElementById("recipe-close-btn");
 
 searchBtn.addEventListener("click", getMealList);
 mealList.addEventListener("click", getMealRecipe);
-console.log(mealDetailsContent);
+//console.log(mealDetailsContent);
 recipeCloseBtn.addEventListener("click", () => {
   mealDetailsContent.parentElement.classList.remove("showRecipe");
 });
 
 function getMealList() {
   let searchInputTxt = document.getElementById("search-input").value.trim();
-  console.log(searchInputTxt);
+  //console.log(searchInputTxt);
   fetch(
     `https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`
   )
     .then((response) => response.json())
     .then((data) => {
       let html = "";
-
+      //console.log(data);
       if (data.meals) {
         data.meals.forEach((meal) => {
           html += `
@@ -59,8 +59,8 @@ function getMealRecipe(e) {
 }
 
 function mealRecipeModal(meal) {
-  console.log(meal);
   meal = meal[0];
+  //console.log(meal);
   let html = `
         <h2 class = "recipe-title">${meal.strMeal}</h2>
         <p class = "recipe-category">${meal.strCategory}</p>
@@ -75,7 +75,7 @@ function mealRecipeModal(meal) {
             <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
         </div>
     `;
-  console.log(html);
+  //console.log(html);
   mealDetailsContent.innerHTML = html;
   mealDetailsContent.parentElement.classList.add("showRecipe");
 }
