@@ -1,0 +1,12 @@
+{
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "\"Diamond Techies\" is the name of this group, our very first Project is a Web application that will suggests different meal based on the ingredients available to the user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
