@@ -31,12 +31,13 @@ nav {
   margin-left: 20px;
 }
 .d-icon {
-  margin-top: 8px;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 8px;
 }
 .logo {
   display: flex;
   align-items: center;
+  margin-left: -10px;
 }
 ul {
   display: flex;
@@ -166,11 +167,11 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* -webkit-transform: translate(-50%, -50%); */
+  -webkit-transform: translate(-50%, -50%);
   color: #fff;
   background: var(--walker);
   border-radius: 16px;
-  /* -webkit-border-radius: 16px; */
+  -webkit-border-radius: 16px;
   height: 90%;
   overflow-y: scroll;
   display: none;
@@ -183,11 +184,8 @@ ul {
 
 .meal-details::-webkit-scrollbar-thumb {
   background: #f0f0f0;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
 }
 
 .showRecipe {
@@ -195,15 +193,15 @@ ul {
 }
 
 .meal-details-content {
-  margin: 2rem;
+  margin: 32px;
 }
 .meal-details-content p:not(.recipe-category) {
-  padding: 1rem 0;
+  padding: 16px 0;
 }
 .recipe-close-btn {
   position: absolute;
-  right: 2rem;
-  top: 2rem;
+  right: 32px;
+  top: 32px;
   font-size: 1.8rem;
   background: #fff;
   border: none;
@@ -219,28 +217,18 @@ ul {
   letter-spacing: 1px;
   padding-bottom: 1rem;
 }
+
 .recipe-category {
   background: #fff;
   font-weight: 600;
   color: var(--jonny);
   display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
+  padding: 3px 8px;
+  border-radius: 4px;
   -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
-}
-.recipe-category {
-  background: #fff;
-  font-weight: 600;
-  color: var(--jonny);
-  display: inline-block;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.3rem;
 }
 .recipe-instruct {
-  padding: 1rem 0;
+  padding: 16px 0;
 }
 .recipe-meal-img img {
   width: 100px;
@@ -262,12 +250,9 @@ ul {
   font-weight: 700;
   transition: all 0.4s linear;
   -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
 }
 .recipe-link a:hover {
-  opacity: 0.8;
+  opacity: 0.8px;
 }
 
 .notFound {
@@ -278,6 +263,28 @@ ul {
   width: 100%;
 }
 
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  nav {
+    background-color: coral;
+  }
+  .nav-logo {
+    margin-left: 10px;
+  }
+  .logo {
+    font-size: 14px;
+  }
+
+  ul {
+    width: 100;
+    gap: 10px;
+    margin-right: 10px;
+  }
+  .li-btn {
+    font-size: 11px;
+    gap: 5px;
+    background-color: coral;
+  }
+}
 @media screen and (min-width: 600px) {
   .meal-search-box {
     width: 540px;
@@ -290,7 +297,7 @@ ul {
   #meal {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 32px;
   }
   .meal-item {
     margin: 0;
