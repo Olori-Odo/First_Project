@@ -1,4 +1,4 @@
-"Diamond Techies" is the name of this group, our very first Project is a Web application that will suggests different meal based on the ingredients available to the user
+This website, Diamond Recipe, is developed by team "Diamond Techies" being our first project in SAIL Innovation Lab.
 
 About the website:
 
